@@ -1,0 +1,850 @@
+html,body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    padding: 50px;
+    background: linear-gradient(to top, transparent, pink);
+    &-topbar{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        }
+    &-menu{
+        &-wrap{
+        display: flex;
+        }
+        &-item{     
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 2em;
+        font-weight: 30px;
+        }
+        &-item:hover{
+            scale: 1.2;
+            color: blue;
+        }
+        &-link{
+        color: rgb(58, 55, 55);
+        text-decoration: none;
+        }
+        }
+    &-btn{  
+        margin-top: 20px;
+        color: black;
+        font-weight: bold;
+        &-item{
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            background: none;           
+            }
+        &-item:hover{
+            width: 90px;
+            color: white;
+            background: black;
+            border-radius: 50px;
+            }
+       }
+    .logo{
+        p{
+            font-size: 5em;
+            font-weight: bold;
+            font-family: 'Dancing Script';
+        }
+    }
+    
+}
+   
+.main{
+
+    &-first-container{
+        padding: 10px;
+        height: 500px;
+        display: flex;
+        .container-example{
+            width: 50%;
+            &-content{
+                &-icon{
+                    background: rgb(131, 121, 121);
+                    color: orange;
+                    border-radius: 20px;
+                    width: 30%;
+                    padding: 5px;
+                    text-align: center;
+                }
+                &-sologan{
+                    font-family: 'Dancing Script';
+                    font-size: 6em;
+                    padding-top: 0;
+                }
+                &-content{
+                    font-size: 20px;
+                }
+           
+            }
+            &-menu{
+                .menu-topbar{
+                   border-radius: 10px;
+                   border-color: black;
+                   display: grid;
+                   grid-template-columns: 80% 20%;
+                    & ul{
+                        list-style: none;
+                        padding: auto;
+                    }
+                    & button{
+                        height: 50px;
+                        font-size: 10px;
+                        margin: 10px;
+                        background: black;
+                        color: white;
+                       
+                    }
+                    & button:hover{
+                        background: orange;
+                        color: black;
+                    }
+                   
+                }
+               
+            }
+        }
+        .container-image{
+            position: relative;
+            width: 50%;
+            &-item1{
+                width: 50%;
+                height: 100%;
+            }
+            &-item2{
+                position: absolute;
+                padding-left: 10px;
+                width: 50%;
+                height: 50%;
+            }
+            &-item3{
+                position: absolute;
+                padding-top: 15em;
+                padding-left: 10px;
+                width: 50%;
+                height: 100%;
+            }
+        }
+       
+    }
+    &-second-container{
+        padding: 10px;
+        padding-top: 4em;
+        h2{
+            font-family: 'Dancing Script';
+            text-align: center;
+            font-size: 6em;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .carousel{
+            height: 300px;
+            &-inner{
+                img{
+                    width: 100%;
+                    height: 500px;
+                }
+            }
+        }
+    }
+    &-third-container{
+        padding: 10px;
+        position: relative;
+        padding-top: 15em;
+        h2{
+            font-family: 'Dancing Script';
+            font-size: 6em;
+        }
+        p{
+            font-size: 20px;
+   
+        }
+        &-btn{
+            position: absolute;
+            padding-top: 0;
+            padding-left:80%;
+            padding-right: 0;
+            button{
+                               
+                background: rgb(226, 225, 222);
+                padding: 15px;
+                margin: 10px;
+                border: none;
+                border-radius: 10px;
+            }
+        
+        }
+        button:hover{
+            background: orange;
+            color: white;
+        }
+        .experience{
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 10px;
+            &-card{              
+                &-body{
+                    i{
+                        color: white;
+                        background: orange;
+                        font-size: 50px;
+                        padding: 10px;
+                    }
+                    h5{
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                    &-link{
+                        a{
+                            color: orange;
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            content: "";
+                            background: orange;
+                            color: white;
+                        }
+                        i{
+                            color: orange;
+                            font-size: 20px;
+                            background: transparent;
+                        }
+                        i:hover{
+                            content: "";
+                            background: orange;
+                            color: white;
+                        }
+                       
+                    }
+                    
+                }
+                
+            }
+          
+        }
+    }
+    &-fourth-container{
+        padding: 10px;
+        padding-top: 3em;
+        position: relative;
+        h2{
+            font-family: 'Dancing Script';
+            text-align: center;
+            font-size: 6em;
+        }
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        &-btn{
+            position: absolute;
+            padding-left: 85%;
+            button{
+                padding: 8px;
+                background: rgb(249, 246, 246);
+                color: rgb(215, 213, 210);
+                border: none;
+               
+            }
+            button:hover{
+                background: orange;
+                color: white;
+            }
+        }
+        
+        .comment{
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 10px;
+            &-card{              
+              i{
+                color: orange;
+                font-size: 20px;
+              }
+              p{
+                color: orange;
+                text-align: left;
+              }
+              img{
+                width: 90%;
+                transition: all 1s ease;
+              }
+              img:hover{
+                opacity: 0.8;
+                scale: 1.1;
+              }
+              .last{
+                padding-top: 1em;
+                position: relative;
+                .price{
+                    p{
+                        color: black;
+                    }
+                }
+                .btn{
+                    position: absolute;
+                    padding-left: 12em;
+                    padding-top: 20px;
+                    a{
+                        background: orange;
+                        color: orangered;
+                        padding: 10px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        background: aqua;
+                        color: blueviolet;
+                    }
+                }
+              }
+                
+            }
+          
+        }
+    }
+    &-fifth-container{
+        padding: 10px;
+        padding-top: 3em;
+        position: relative;
+        h2{
+            font-family: 'Dancing Script';
+            text-align: center;
+            font-size: 6em;
+        }
+        &-btn{
+            position: absolute;
+            padding-left: 85%;
+            button{
+                padding: 8px;
+                background: rgb(249, 246, 246);
+                color: rgb(215, 213, 210);
+                border: none;
+               
+            }
+            button:hover{
+                background: orange;
+                color: white;
+            }
+        }
+        
+        .comment{
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 10px;
+            &-card{              
+              i{
+                color: orange;
+              }
+                
+            }
+          
+        }
+    }    
+}
+.footer{
+    padding: 50px;
+    background: linear-gradient(to bottom, transparent, pink);
+        h2{
+            font-family: 'Dancing Script';
+            text-align: center;
+            font-size: 6em;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+    &-form{
+        padding-left: 8em;
+        input{
+            padding: 1em;
+            width: 50%;
+        }
+        button{
+            padding: 0.8em;
+            background: black;
+            color: white;
+            border-radius: 10px;
+        }
+        button:hover{
+            z-index: 50;
+            scale: 1.1;
+            opacity: 0.7;
+        }
+    }
+    &-menu{
+        padding-top: 2em;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        .Logo{
+            p{
+                font-size: 3em;
+                font-weight: bold;
+                font-family: 'Dancing Script';
+            }
+
+        }
+        &-item{
+            ul{
+                display: flex;
+                padding: 10px;                
+                list-style: none;
+                li{
+                    margin: 20px;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                    
+                }
+                li:hover{
+                    scale: 1.2;
+                }
+                a:hover{
+                    color: red;
+                    opacity: 0.5;
+                }
+                
+            }
+            
+        }
+      
+        &-icon{
+            font-size: 40px;
+            a{
+                text-decoration: none;
+                color: black;
+                i:hover{
+                    color: blue;
+                    scale: 1.1;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    html,body{
+        width: 100%;
+    }
+    .header {
+        padding: 0;
+        margin: 0;
+    }
+    .header-topbar{
+        width: 100%;
+        grid-template-columns: 10% 70% 20%;
+    }
+    .header .logo p {
+        font-size: 1em;
+        padding: 2px;
+        
+    }
+    .header-menu-item{
+        font-size: 10px;
+        margin: 5px;
+
+    } 
+    .header-btn {
+       margin-top: 0;
+    }
+    .header-btn-item {
+        padding: 1px;
+        margin: 0;
+        font-size: 10px;
+    } 
+    .header-btn-item:hover{
+      width: fit-content;
+    }
+
+    .main-first-container{
+        height: 200px;
+    
+    }
+    .container-example-content-icon{
+        font-size: 3px;
+    }
+    .main-first-container .container-example-content-sologan {
+        font-size: 1em;
+    }
+    .main-first-container .container-example-content-content{
+        font-size:5px;
+    }
+    .main-first-container .container-example-menu .menu-topbar {
+        display: grid;
+        grid-template-columns: 60% 40%;
+       
+    }
+    .main-first-container .container-example-menu .menu-topbar ul {
+        font-size: 5px;
+       padding-top: 1em;
+      }
+    .main-first-container .container-example-menu .menu-topbar button {
+        position: relative;
+        height: 13px;
+        width: 40px;
+        font-size: 5px;
+        background: black;
+        color: white;
+      }
+      .btn{
+        position: absolute;
+        padding: 0;
+        width: 5em;
+        height: 30px;
+    }
+    .place{
+        font-size: 0.5em;
+    }
+    .container-image{
+        height: 80%;
+    }
+    .main-first-container .container-image-item1 {
+        width: 50%;
+        height: 100%;
+      }
+    .main-first-container .container-image-item2 {
+       
+        padding-left: 5px;
+        width: 50%;
+        height: 50%;
+      }
+      .container-image-item3{
+        padding-top: 10em;
+        padding-left: 10px;
+        width: 50%;
+        height: 50%;
+    }
+    .main-second-container{
+        padding-top: 0;
+    }
+   
+    .main-second-container h2{
+      font-size: 1.5em;
+    }
+    .main-second-container p {
+        font-size: 10px;
+      }
+    .main-third-container h2{
+        font-size: 5em;
+    }
+    .main-second-container .carousel {
+        height: 100px;
+    }
+    .main-second-container .carousel-inner img {
+        width: 100%;
+        height: 200px;
+    }
+    .main-third-container{
+        padding-top: 6em;
+    }
+    .main-third-container h2 {
+        font-size: 2em;
+    }
+    .main-third-container p {
+        font-size: 10px;
+    }
+    .main-third-container-btn{
+        padding-left: 75%; 
+
+    }
+    .main-third-container .experience-card-body i {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .main-third-container-btn button{
+        padding: 5px;
+        margin: 5px;
+    }
+    .main-third-container .experience-card-body h5{
+        font-size: 10px;
+    }
+    .main-third-container .experience-card-body p{
+        font-size: 7px;
+    }
+    .main-third-container .experience-card-body-link a{
+        font-size: 8px;
+    }
+    .main-fourth-container h2{
+        font-size: 2em;
+    }
+    .main-fourth-container p {
+        font-size: 10px;
+    }
+    .main-fourth-container-btn {
+        padding-left: 80%;
+      }
+    .main-fourth-container-btn button {
+        padding: 3px;
+      }
+    .main-fourth-container .comment-card p{
+        margin: 2px;
+      } 
+    .main-fourth-container .comment-card i {
+        color: orange;
+        font-size: 5px;
+      }
+    h5{
+        font-size: 8px;
+    }
+      .main-fourth-container .comment-card .last .btn {
+        position: absolute;
+        padding-left: 30em;
+        padding-top: 10px;
+        display: grid;
+      }
+      .main-fourth-container .comment-card .last .btn a {
+        width: 12em;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 1em;  
+      }
+      .main-fourth-container .comment-card img {
+        height: 150px;
+        width: 110px;
+      }
+      .main-fourth-container .comment-card .last {
+        padding-top: 0;
+      }
+      .main-fourth-container .comment-card .last .price p {
+        font-size: 8px;
+        padding: 0;
+      }
+      .main-fourth-container .comment-card .last .price i{
+      padding: 0;
+    }
+    .main-fourth-container .comment-card .last .btn {
+        padding-left: 4em;
+        padding-top: 10px;
+    }
+    .main-fourth-container .comment-card .last .btn a {
+        padding: 3px;
+        font-size: 4px;
+    }
+    .main-fifth-container {
+        padding-top: 1em;
+      }
+      .main-fifth-container h2 {
+        font-size: 2em;
+      }
+      .main-fifth-container-btn {
+        padding-left: 80%;
+        font-size: 5px;
+      }
+      .main-fifth-container .comment-card i{
+        font-size: 5px;
+      }
+      .main-fifth-container .comment-card p{
+        font-size:8px;
+      }
+      .main-fifth-container .comment-card img{
+        width: 90%;
+        height: 90%;
+      }
+      .main-fifth-container .comment-card h4{
+        font-size: 10px;
+      }
+      .main-fifth-container .comment-card div{
+        font-size: 10px;
+      }
+      .footer-menu {
+        padding-top: 2em;
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+      }
+      .footer h2{
+        font-size: 2em;
+      }
+      .footer p {
+        font-size: 10px;
+      }
+      .footer-form {
+        padding-left: 1em;
+      }
+      .footer-form input {
+        padding: 4px;
+        font-size: 8px;
+      }
+      .footer-form button{
+        padding: 3px;
+        font-size: 8px;
+      }
+      .footer-menu .Logo p {
+        font-size: 1em;
+        top: 0;
+      }
+      .footer-menu-item ul {
+        padding: 0;
+      }
+      .footer-menu-item ul li {
+        margin: 1px;
+        font-size: 8px;
+      }
+      .footer-menu-icon {
+        position: absolute;
+        padding-left: 8em;
+        font-size: 30px;
+      }
+      .footer-menu-icon a {
+        font-size: 10px;
+      }
+
+}
+/* tablets */
+@media only screen and (max-width: 992px) and (min-width: 578px) {
+
+    .header {
+        padding: 0;
+        margin: 0;
+    }
+    .header-topbar{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .header .logo p {
+        font-size: 2em;
+        padding: 2px;
+        
+    }
+    .header-menu-item{
+        font-size: 15px;
+        margin: 20px;
+    } 
+    .header-btn {
+       margin-top: 10px;
+    }
+    .header-btn-item {
+        padding: 5px;
+        margin: 0;
+        font-size: 15px;
+    } 
+    .header-btn-item:hover{
+      width: fit-content; 
+    }
+    .container-example-content-icon{
+        font-size: 10px;
+    }
+    .main-first-container .container-example-content-sologan {
+        font-size: 4em;
+    }
+    .main-first-container .container-example-content-content{
+        font-size: 15px;
+    }
+    .btn{
+        padding: 0;
+        width: 7em;
+        font-size: 5px;
+        height: 30px;
+    }
+    .container-image{
+        height: 80%;
+    }
+    .main-second-container{
+        padding-top: 0;
+    }
+    .main-second-container h2{
+      font-size: 5em;
+    }
+    .main-third-container h2{
+        font-size: 5em;
+    }
+    .main-third-container p {
+        font-size: 15px;
+    }
+    .main-fourth-container h2{
+        font-size: 4em;
+    }
+    .main-fourth-container p {
+        font-size: 10px;
+    }
+    .main-fourth-container .comment-card i {
+        color: orange;
+        font-size: 8px;
+      }
+    h5{
+        font-size: 10px;
+    }
+      .main-fourth-container .comment-card .last .btn {
+        position: absolute;
+        padding-left: 30em;
+        padding-top: 10px;
+        display: grid;
+      }
+      .main-fourth-container .comment-card .last .btn a {
+        width: 12em;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 1em;  
+      }
+      .main-fifth-container h2 {
+        font-size: 5em;
+      }
+      .main-fifth-container .comment-card i{
+        font-size: 10px;
+      }
+      .main-fifth-container .comment-card p{
+        font-size: 15px;
+      }
+      .footer-menu {
+        padding-top: 2em;
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+      }
+      .footer h2{
+        font-size: 4em;
+      }
+      .footer p {
+        text-align: center;
+        font-size: 15px;
+      }
+      .footer-form input {
+        padding: 10px;
+      }
+      .footer-form button{
+        padding: 10px;
+      }
+      .footer-menu-item ul li {
+        margin: 10px;
+        
+      }
+      .footer-menu-icon a {
+        font-size: 25px;
+        margin: 2px;
+      }
+}
+/* desktop */
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+
+}
+
+/*large desktop */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+
+
+
+}
+/*extra desktop */
+@media only screen and (min-width: 1200px) {
+
+
+
+
+
+}
+   
