@@ -2,26 +2,55 @@ html, body {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  height: 100%;
-  width: 100%;
 }
 
 .header {
-  padding: 50px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 30px;
   background: linear-gradient(to top, transparent, pink);
 }
+.header .logo p {
+  margin: 15px 10px;
+  font-size: 5em;
+  font-weight: bold;
+  font-family: "Dancing Script";
+}
 .header-topbar {
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .toggle {
+  display: none;
+  background: transparent;
+  color: black;
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
 .header-menu-wrap {
   display: flex;
 }
+.header-menu-wrap li:hover a {
+  color: rgb(237, 55, 182);
+  transition: all 0.1s;
+}
 .header-menu-item {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  margin: 2em;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin: 3em;
   font-weight: 30px;
+}
+.header-menu-item button {
+  font-size: 15px;
+  padding: 5px;
+  width: 5em;
+  height: 2.5em;
+}
+.header-menu-item button:hover {
+  background: black;
+  color: white;
 }
 .header-menu-item:hover {
   scale: 1.2;
@@ -32,26 +61,16 @@ html, body {
   text-decoration: none;
 }
 .header-btn {
-  margin-top: 20px;
-  color: black;
-  font-weight: bold;
+  padding-top: 30px;
 }
-.header-btn-item {
-  padding: 10px;
-  margin: 5px;
+.header-btn .btn {
+  background: transparent;
   border: none;
-  background: none;
+  color: black;
 }
-.header-btn-item:hover {
-  width: 90px;
-  color: white;
+.header-btn .btn:hover {
   background: black;
-  border-radius: 50px;
-}
-.header .logo p {
-  font-size: 5em;
-  font-weight: bold;
-  font-family: "Dancing Script";
+  color: white;
 }
 
 .main-first-container {
@@ -62,13 +81,18 @@ html, body {
 .main-first-container .container-example {
   width: 50%;
 }
-.main-first-container .container-example-content-icon {
+.main-first-container .container-example-content a {
+  text-decoration: none;
   background: rgb(131, 121, 121);
   color: orange;
   border-radius: 20px;
   width: 30%;
   padding: 5px;
   text-align: center;
+}
+.main-first-container .container-example-content a:hover {
+  background: orange;
+  color: black;
 }
 .main-first-container .container-example-content-sologan {
   font-family: "Dancing Script";
@@ -100,25 +124,27 @@ html, body {
   color: black;
 }
 .main-first-container .container-image {
-  position: relative;
+  display: flex;
   width: 50%;
 }
-.main-first-container .container-image-item1 {
+.main-first-container .container-image .container-image-item1 {
   width: 50%;
+  background: black;
+}
+.main-first-container .container-image .container-image-item1 .container-image-item1 {
+  width: 100%;
   height: 100%;
 }
-.main-first-container .container-image-item2 {
-  position: absolute;
-  padding-left: 10px;
+.main-first-container .container-image .container-image-item2 {
   width: 50%;
+}
+.main-first-container .container-image .container-image-item2 .container-image-item2 {
+  width: 100%;
   height: 50%;
 }
-.main-first-container .container-image-item3 {
-  position: absolute;
-  padding-top: 15em;
-  padding-left: 10px;
-  width: 50%;
-  height: 100%;
+.main-first-container .container-image .container-image-item2 .container-image-item3 {
+  width: 100%;
+  height: 50%;
 }
 .main-second-container {
   padding: 10px;
@@ -141,19 +167,34 @@ html, body {
   height: 500px;
 }
 .main-third-container {
-  padding: 10px;
   position: relative;
-  padding-top: 15em;
+  padding: 30px;
+  margin-top: 12em;
+}
+.main-third-container .carousel-inner {
+  width: 100%;
+}
+.main-third-container .carousel-control-prev {
+  width: 40px;
+  height: 40px;
+  background: rgb(214, 210, 210);
+  margin-left: 90%;
+}
+.main-third-container .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background: rgb(214, 210, 210);
 }
 .main-third-container h2 {
   font-family: "Dancing Script";
   font-size: 6em;
+  text-align: left;
 }
 .main-third-container p {
   font-size: 20px;
+  text-align: left;
 }
 .main-third-container-btn {
-  position: absolute;
   padding-top: 0;
   padding-left: 80%;
   padding-right: 0;
@@ -170,11 +211,16 @@ html, body {
   color: white;
 }
 .main-third-container .experience {
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  justify-content: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+.main-third-container .experience-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 .main-third-container .experience-card-body i {
   color: white;
@@ -185,6 +231,11 @@ html, body {
 .main-third-container .experience-card-body h5 {
   font-weight: bold;
   font-size: 20px;
+  padding: 1em;
+}
+.main-third-container .experience-card-body p {
+  font-size: 10px;
+  text-align: left;
 }
 .main-third-container .experience-card-body-link a {
   color: orange;
@@ -205,22 +256,16 @@ html, body {
   background: orange;
   color: white;
 }
-.main-fourth-container {
-  padding: 10px;
-  padding-top: 3em;
-  position: relative;
-}
 .main-fourth-container h2 {
   font-family: "Dancing Script";
   text-align: center;
-  font-size: 6em;
+  font-size: 5em;
 }
 .main-fourth-container p {
   font-size: 20px;
   text-align: center;
 }
 .main-fourth-container-btn {
-  position: absolute;
   padding-left: 85%;
 }
 .main-fourth-container-btn button {
@@ -236,9 +281,30 @@ html, body {
 .main-fourth-container .comment {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  grid-template-columns: 33% 33% 33%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.main-fourth-container .comment-card {
+  display: flex;
+  justify-content: center;
+}
+.main-fourth-container .comment-card .card-body {
+  display: flex;
+  justify-content: space-around;
+}
+.main-fourth-container .comment-card .card-body button {
+  background: orange;
+}
+.main-fourth-container .comment-card .card-body button a {
+  color: orangered;
+  text-decoration: none;
+}
+.main-fourth-container .comment-card .card-body button:hover {
+  background: rgb(216, 19, 52);
+}
+.main-fourth-container .comment-card .card-body button:hover a:hover {
+  color: rgb(27, 19, 34);
 }
 .main-fourth-container .comment-card i {
   color: orange;
@@ -248,70 +314,31 @@ html, body {
   color: orange;
   text-align: left;
 }
-.main-fourth-container .comment-card img {
-  width: 90%;
-  transition: all 1s ease;
-}
 .main-fourth-container .comment-card img:hover {
-  opacity: 0.8;
-  scale: 1.1;
-}
-.main-fourth-container .comment-card .last {
-  padding-top: 1em;
-  position: relative;
-}
-.main-fourth-container .comment-card .last .price p {
-  color: black;
-}
-.main-fourth-container .comment-card .last .btn {
-  position: absolute;
-  padding-left: 12em;
-  padding-top: 20px;
-}
-.main-fourth-container .comment-card .last .btn a {
-  background: orange;
-  color: orangered;
-  padding: 10px;
-  border-radius: 10px;
-  text-decoration: none;
-}
-.main-fourth-container .comment-card .last .btn a:hover {
-  background: aqua;
-  color: blueviolet;
+  opacity: 0.5;
 }
 .main-fifth-container {
-  padding: 10px;
   padding-top: 3em;
-  position: relative;
 }
 .main-fifth-container h2 {
   font-family: "Dancing Script";
-  text-align: center;
   font-size: 6em;
+  text-align: left;
 }
-.main-fifth-container-btn {
-  position: absolute;
-  padding-left: 85%;
+.main-fifth-container .carousel-inner .comment {
+  display: flex;
+  justify-content: center;
 }
-.main-fifth-container-btn button {
-  padding: 8px;
-  background: rgb(249, 246, 246);
-  color: rgb(215, 213, 210);
-  border: none;
+.main-fifth-container .carousel-inner .comment .card {
+  background: rgb(237, 251, 251);
+  width: 98%;
 }
-.main-fifth-container-btn button:hover {
-  background: orange;
-  color: white;
-}
-.main-fifth-container .comment {
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-}
-.main-fifth-container .comment-card i {
+.main-fifth-container .carousel-inner .comment .card-title i {
   color: orange;
+  font-size: 15px;
+}
+.main-fifth-container .carousel-inner .comment p {
+  font-size: 15px;
 }
 
 .footer {
@@ -386,7 +413,7 @@ html, body {
   scale: 1.1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   html, body {
     width: 100%;
   }
@@ -396,7 +423,18 @@ html, body {
   }
   .header-topbar {
     width: 100%;
-    grid-template-columns: 10% 70% 20%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-topbar .toggle, .header-topbar a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  .header-menu-wrap {
+    display: none;
+    flex-direction: column;
+    text-align: center;
   }
   .header .logo p {
     font-size: 1em;
@@ -420,7 +458,7 @@ html, body {
     width: fit-content;
   }
   .main-first-container {
-    height: 200px;
+    height: 150px;
   }
   .container-example-content-icon {
     font-size: 3px;
@@ -460,13 +498,11 @@ html, body {
     height: 80%;
   }
   .main-first-container .container-image-item1 {
-    width: 50%;
+    width: 100%;
     height: 100%;
   }
   .main-first-container .container-image-item2 {
-    padding-left: 5px;
-    width: 50%;
-    height: 50%;
+    display: none;
   }
   .container-image-item3 {
     padding-top: 10em;
@@ -475,16 +511,13 @@ html, body {
     height: 50%;
   }
   .main-second-container {
-    padding-top: 0;
+    padding-top: 10px;
   }
   .main-second-container h2 {
     font-size: 1.5em;
   }
   .main-second-container p {
     font-size: 10px;
-  }
-  .main-third-container h2 {
-    font-size: 5em;
   }
   .main-second-container .carousel {
     height: 100px;
@@ -494,27 +527,34 @@ html, body {
     height: 200px;
   }
   .main-third-container {
-    padding-top: 6em;
+    padding-top: 0;
   }
   .main-third-container h2 {
-    font-size: 2em;
+    font-size: 3em;
   }
   .main-third-container p {
     font-size: 10px;
   }
-  .main-third-container-btn {
-    padding-left: 75%;
+  .main-third-container .carousel .button .carousel-control-prev {
+    margin-left: 16em;
+    width: 20px;
+    height: 20px;
+  }
+  .main-third-container .carousel .button .carousel-control-next {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
   }
   .main-third-container .experience-card-body i {
     font-size: 10px;
-    padding: 5px;
+    padding: 2px;
   }
-  .main-third-container-btn button {
+  .main-third-container .main-third-container-btn button {
     padding: 5px;
     margin: 5px;
   }
   .main-third-container .experience-card-body h5 {
-    font-size: 10px;
+    font-size: 8px;
   }
   .main-third-container .experience-card-body p {
     font-size: 7px;
@@ -533,6 +573,29 @@ html, body {
   }
   .main-fourth-container-btn button {
     padding: 3px;
+  }
+  .carousel-inner .comment {
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .carousel-inner .comment-card {
+    justify-content: center;
+  }
+  .card-body {
+    margin-right: 40px;
+    padding: 5px 0;
+  }
+  .card-body .card-body1 {
+    margin-left: 2px;
+  }
+  .card-body .card-body2 {
+    background: aquamarine;
+  }
+  .card-body .card-body2 .btn {
+    margin-right: 5px;
+    font-size: 5px;
+    width: 40px;
+    height: 10px;
   }
   .main-fourth-container .comment-card p {
     margin: 2px;
@@ -581,6 +644,12 @@ html, body {
   .main-fifth-container {
     padding-top: 1em;
   }
+  .main-fifth-container .carousel-inner .comment-card .card-text {
+    font-size: 8px;
+  }
+  .main-fifth-container .carousel-inner .comment-card .card-body h6 {
+    font-size: 10px;
+  }
   .main-fifth-container h2 {
     font-size: 2em;
   }
@@ -590,9 +659,6 @@ html, body {
   }
   .main-fifth-container .comment-card i {
     font-size: 5px;
-  }
-  .main-fifth-container .comment-card p {
-    font-size: 8px;
   }
   .main-fifth-container .comment-card img {
     width: 90%;
@@ -626,16 +692,20 @@ html, body {
     padding: 3px;
     font-size: 8px;
   }
-  .footer-menu .Logo p {
-    font-size: 1em;
-    top: 0;
+  .footer-menu {
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
   }
-  .footer-menu-item ul {
-    padding: 0;
+  .footer-menu .Logo p {
+    padding-top: 15px;
+    font-size: 1em;
+  }
+  .footer-menu-item {
+    margin: 10px;
   }
   .footer-menu-item ul li {
-    margin: 1px;
-    font-size: 8px;
+    margin: 2px;
+    font-size: 10px;
   }
   .footer-menu-icon {
     position: absolute;
@@ -655,6 +725,11 @@ html, body {
   .header-topbar {
     width: 100%;
     padding-top: 10px;
+  }
+  .header-topbar .toggle, .header-topbar a {
+    float: none;
+    display: block;
+    text-align: right;
   }
   .header .logo p {
     font-size: 2em;

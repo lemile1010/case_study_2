@@ -29,10 +29,11 @@
     </head>
     <body>
         <header class="header">
+            <div class="logo">
+                <p>Besnik</p>
+            </div> 
+
             <div class="header-topbar">
-                <div class="logo">
-                    <p>Besnik</p>
-                </div>             
                 <nav class="header-menu">
                     <ul class="header-menu-wrap">
                         <li class="header-menu-item">
@@ -47,21 +48,27 @@
                         <li class="header-menu-item">
                             <a class="header-menu-link" href="#">Contact</a>
                         </li>
+                        <li class="header-menu-item">
+                            <button class="btn" type="button">Login</button> 
+                        </li>
+                        <li class="header-menu-item">
+                            <button class="btn" type="button">Sing in</button>
+ 
+                        </li>
                     </ul>
                 </nav>
-                <div class="header-btn">
-                    <button class="header-btn-item" type="button">Login</button>
-                    <button class="header-btn-item" type="button">Sing in</button>
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-    
+
             </div>
         </div>
         </header>
         <main class="main">
             <div class="main-first-container">
-                <div class="container-example">
+                <div class="container-example col-6  col-sm-6 col-md-6">
                     <div class="container-example-content">
-                        <p class="container-example-content-icon">Travel made simple</p>
+                        <a class="container-example-content-icon" href="#">Travel made simple</a>
                         <h2 class="container-example-content-sologan">Explore a new world.</h2>
                         <p class="container-example-content-content">No matter where in the world you want to go, we can help get you there</p>  
                     </div>
@@ -111,10 +118,14 @@
                         <p class="place">Popular Places: Bali, Pataya, Istanbul, Paris, San Francisco</p>
                     </div> 
                 </div>
-                <div class="container-image">
-                    <image class="container-image-item1" src="assets/image/ANTELOPE CANYON_ARIZONA.jpg"></image>
-                    <image class="container-image-item2" src="assets/image/thailan.jpg"></image>
-                    <image class="container-image-item3" src="assets/image/HALLSTATT _ÁO.jpg"></image>
+                <div class="container-image col-6 col-sm-6 col-md-6">
+                    <div class="container-image-item1">
+                        <image class="container-image-item1" src="assets/image/ANTELOPE CANYON_ARIZONA.jpg"></image>
+                    </div>
+                    <div class="container-image-item2">
+                        <image class="container-image-item2" src="assets/image/thailan.jpg"></image>
+                        <image class="container-image-item3" src="assets/image/HALLSTATT _ÁO.jpg"></image>
+                    </div>
                 </div>                   
             </div>
 
@@ -157,198 +168,601 @@
                             </div>
                 </div>
             </div>
-
             <div class="main-third-container">
                 <h2>Why Besnik</h2>
-                <p>Our aim is provide you with a top-quality tour experience.</p>
-                <div class="main-third-container-btn">
-                    <button><i class="fa-solid fa-chevron-left"></i></button>
-                    <button><i class="fa-solid fa-chevron-right"></i></button>                   
+                <p>Our aim is provide you with a top-quality tour experience</p>
+                <div class="carousel">
+                    <!-- Carousel -->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                  
+
+                    <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+          
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active  col-4">
+                            <div class="experience">
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-award"></i>
+                                        <h5 class="card-title">Best Services</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-martini-glass-citrus"></i>
+                                        <h5 class="card-title">Amazing Facilities</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                                        <h5 class="card-title">Affordable Pricing</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+                        <div class="carousel-item  col-4">
+                            <div class="experience">
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-award"></i>
+                                        <h5 class="card-title">Best Services</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-martini-glass-citrus"></i>
+                                        <h5 class="card-title">Amazing Facilities</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>                
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                                        <h5 class="card-title">Affordable Pricing</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>                
+                            </div>
+            
+                        </div>
+                        <div class="carousel-item  col-4">
+                            <div class="experience">
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-award"></i>
+                                        <h5 class="card-title">Best Services</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-martini-glass-citrus"></i>
+                                        <h5 class="card-title">Amazing Facilities</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                
+                                <div class="experience-card">
+                                    <div class="experience-card-body">
+                                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                                        <h5 class="card-title">Affordable Pricing</h5>
+                                        <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
+                                        <div class="experience-card-body-link">
+                                            <a href="#" class="card-link">Learn More</a>
+                                            <i class="fa-solid fa-arrow-right"></i>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                
+                            </div>
+            
+                        </div>
+                        </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <div class="button">
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+            
+                    </div>
+                            </div>
                 </div>
-                <div class="experience">
-                    <div class="experience-card">
-                        <div class="experience-card-body">
-                            <i class="fa-solid fa-award"></i>
-                            <h5 class="card-title">Best Services</h5>
-                            <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
-                            <div class="experience-card-body-link">
-                                <a href="#" class="card-link">Learn More</a>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    <div class="experience-card">
-                        <div class="experience-card-body">
-                            <i class="fa-solid fa-martini-glass-citrus"></i>
-                            <h5 class="card-title">Amazing Facilities</h5>
-                            <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
-                            <div class="experience-card-body-link">
-                                <a href="#" class="card-link">Learn More</a>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                           
-                        </div>
-                    </div>
-    
-                    <div class="experience-card">
-                        <div class="experience-card-body">
-                            <i class="fa-solid fa-hand-holding-dollar"></i>
-                            <h5 class="card-title">Affordable Pricing</h5>
-                            <p class="card-submit">Our aim is provide you with a top-quality tour experience.</p>
-                            <div class="experience-card-body-link">
-                                <a href="#" class="card-link">Learn More</a>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                           
-                        </div>
-                    </div>
-    
-                </div>
-    
             </div>
             <div class="main-fourth-container">
                 <h2>We Prtovide world best Destinations for you</h2>
                 <p>Our aim is provide you with a top-quality tour experience.</p>
-                <div class="main-fourth-container-btn">
-                    <button><i class="fa-solid fa-chevron-left"></i></button>
-                    <button><i class="fa-solid fa-chevron-right"></i></button>                   
-                </div>
-                <div class="comment">                    
-                    <div class="comment-card">
-                        <div class="comment-card-item">
-                            <p> <i class="fa-solid fa-map-location-dot"></i>  Austria</p>
-                            <h5>HALLISTATT</h5>                           
-                            <img width="325" height="200" src="assets/image/HALLSTATT _ÁO.jpg">
-                            <div class="last d-flex">
-                                <div class="price">
-                                    <p>$1250.00</p>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <button class="btn">
-                                    <a class="" href="#">View Full details</a>
-                                </button>
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="comment">                    
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Austria</p>
+                                    <h5 class="card-text">HALLISTATT</h5>
+                                    <img src="assets/image/HALLSTATT _ÁO.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
                             </div>
-                            
-                            
-                        </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Germany</p>
+                                    <h5 class="card-text">NEUSCHWANSTEIN</h5>
+                                    <img src="assets/image/img_9582_jpg.webp" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
+                            </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Austria</p>
+                                    <h5 class="card-text">HALLISTATT</h5>
+                                    <img src="assets/image/HALLSTATT _ÁO.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
+                            </div>
+                        </div>                      </div>
+                      <div class="carousel-item">
+                        <div class="comment">                    
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Austria</p>
+                                    <h5 class="card-text">HALLISTATT</h5>
+                                    <img src="assets/image/HALLSTATT _ÁO.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
+                            </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Germany</p>
+                                    <h5 class="card-text">NEUSCHWANSTEIN</h5>
+                                    <img src="assets/image/img_9582_jpg.webp" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
+                            </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Austria</p>
+                                    <h5 class="card-text">HALLISTATT</h5>
+                                    <img src="assets/image/HALLSTATT _ÁO.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
+                            </div>
+                        </div>                      </div>
+                      <div class="carousel-item">
+                        <div class="comment">                    
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Austria</p>
+                                    <h5 class="card-text">HALLISTATT</h5>
+                                    <img src="assets/image/HALLSTATT _ÁO.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
+                            </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Germany</p>
+                                    <h5 class="card-text">NEUSCHWANSTEIN</h5>
+                                    <img src="assets/image/img_9582_jpg.webp" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
+                            </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <p class="card-title"><i class="fa-solid fa-map-location-dot"></i>Austria</p>
+                                    <h5 class="card-text">HALLISTATT</h5>
+                                    <img src="assets/image/HALLSTATT _ÁO.jpg" class="card-img-top img-fluid" alt="...">
+                                    <div class="card-body">
+                                        <div class="card-body1">
+                                            <h5 class="card-title">$1250.00</h5>
+                                            <p class="card-text">
+                                              <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                                  <i class="fa-solid fa-star"></i>
+                                            </p>
+                                        </div>
+                                        <div class="card-body2">
+                                            <button class="btn">
+                                                <a class="" href="#">View Full details</a>
+                                            </button>                            </div>
+            
+                                        </div>
+                                      
+                                  </div>                    
+                            </div>
+                        </div>                      </div>
                     </div>
-
-                    <div class="comment-card">
-                        <div class="comment-card-item">
-                            <p> <i class="fa-solid fa-map-location-dot"></i>  GERMANY</p>
-                            <h5>NEUSCHWANSTEIN CASTLE</h5>                           
-                            <img width="325" height="200" src="assets/image/LÂU ĐÀI NEUSCHWANSTEIN.jpg">
-                            <div class="last d-flex">
-                                <div class="price">
-                                    <p>$1250.00</p>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <button class="btn">
-                                    <a class="" href="#">View Full details</a>
-                                </button>
-                            </div>
-                            
-                            
-                        </div>
-
-                    </div>             
-                    <div class="comment-card"> 
-                        <div class="comment-card-item">
-                            <p> <i class="fa-solid fa-map-location-dot"></i>  ECUADOR</p>
-                            <h5>PAILON DEL DIABLO</h5>                           
-                            <img width="325" height="200" src="assets/image/img_9582_jpg.webp">
-                            <div class="last d-flex">
-                                <div class="price">
-                                    <p>$1250.00</p>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <button class="btn">
-                                    <a class="" href="#">View Full details</a>
-                                </button>
-                            </div>
-                            
-                            
-                        </div>
-                                    
-                    </div>
-                            
-                </div>
-                      
-
-
-
-                           
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
             <div class="main-fifth-container">
                 <h2>What Our Clients Say</h2>
-                <div class="main-fifth-container-btn">
-                    <button><i class="fa-solid fa-chevron-left"></i></button>
-                    <button><i class="fa-solid fa-chevron-right"></i></button>                   
-                </div>
-                <div class="comment">                    
-                    <div class="comment-card">
-                        <div class="icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <a href="https://unitravel.ancorathemes.com/team/peter-bennett/" aria-hidden="true"><img width="200" height="200" src="https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-360x360.jpg" class="attachment-unitravel-thumb-team-short size-unitravel-thumb-team-short wp-post-image" alt="Peter Bennett" loading="lazy" srcset="https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-360x360.jpg 360w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-300x300.jpg 300w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-1024x1024.jpg 1024w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-150x150.jpg 150w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-768x768.jpg 768w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-65x65.jpg 65w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-370x370.jpg 370w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-90x90.jpg 90w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-322x322.jpg 322w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-760x760.jpg 760w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-484x484.jpg 484w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-940x940.jpg 940w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-100x100.jpg 100w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9.jpg 1200w" sizes="(max-width: 360px) 100vw, 360px"></a>
-                                <h4 class="sc_team_item_title"><a href="https://unitravel.ancorathemes.com/team/peter-bennett/">Peter Bennett</a></h4>
-                                <div class="sc_team_item_subtitle">Cusco Guide</div>
-                        </div>
-                    </div>
-                    <div class="comment-card">
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <a href="https://unitravel.ancorathemes.com/team/peter-bennett/" aria-hidden="true"><img width="200" height="200" src="https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-360x360.jpg" class="attachment-unitravel-thumb-team-short size-unitravel-thumb-team-short wp-post-image" alt="Peter Bennett" loading="lazy" srcset="https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-360x360.jpg 360w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-300x300.jpg 300w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-1024x1024.jpg 1024w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-150x150.jpg 150w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-768x768.jpg 768w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-65x65.jpg 65w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-370x370.jpg 370w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-90x90.jpg 90w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-322x322.jpg 322w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-760x760.jpg 760w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-484x484.jpg 484w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-940x940.jpg 940w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-100x100.jpg 100w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9.jpg 1200w" sizes="(max-width: 360px) 100vw, 360px"></a>
-                                <h4 class="sc_team_item_title"><a href="https://unitravel.ancorathemes.com/team/peter-bennett/">Peter Bennett</a></h4>
-                                <div class="sc_team_item_subtitle">Cusco Guide</div>
-                        </div>
 
-                    </div>             
-                    <div class="comment-card">
-                             
-                        <div class="">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <a href="https://unitravel.ancorathemes.com/team/peter-bennett/" aria-hidden="true"><img width="200" height="200" src="https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-360x360.jpg" class="attachment-unitravel-thumb-team-short size-unitravel-thumb-team-short wp-post-image" alt="Peter Bennett" loading="lazy" srcset="https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-360x360.jpg 360w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-300x300.jpg 300w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-1024x1024.jpg 1024w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-150x150.jpg 150w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-768x768.jpg 768w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-65x65.jpg 65w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-370x370.jpg 370w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-90x90.jpg 90w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-322x322.jpg 322w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-760x760.jpg 760w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-484x484.jpg 484w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-940x940.jpg 940w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9-100x100.jpg 100w, https://unitravel.ancorathemes.com/wp-content/uploads/2016/12/team-9.jpg 1200w" sizes="(max-width: 360px) 100vw, 360px"></a>
-                                <h4 class="sc_team_item_title"><a href="https://unitravel.ancorathemes.com/team/peter-bennett/">Peter Bennett</a></h4>
-                                <div class="sc_team_item_subtitle">Cusco Guide</div>
-                        </div>
-
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="comment">                    
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <a href="#">Cusco Guide</a>
+                                      <h6>PETER BENNETT</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="#">Cusco Guide</a>
+                                        <h6>PETER BENNETT</h6>
+                                    </div>
+                                  </div>
+        
+                            </div>             
+                            <div class="comment-card">
+                                     
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="#">Cusco Guide</a>
+                                        <h6>PETER BENNETT</h6>
+                                    </div>
+                                  </div>
+                            </div>
                                     
+                        </div>                    </div>
+                    <div class="carousel-item">
+                        <div class="comment">                    
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="#">Cusco Guide</a>
+                                        <h6>PETER BENNETT</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="#">Cusco Guide</a>
+                                        <h6>PETER BENNETT</h6>
+                                    </div>
+                                  </div>
+        
+                            </div>             
+                            <div class="comment-card">
+                                     
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="#">Cusco Guide</a>
+                                        <h6>PETER BENNETT</h6>
+                                    </div>
+                                  </div>
+                            </div>
+                                    
+                        </div>                    </div>
+                    <div class="carousel-item">
+                        <div class="comment">                    
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="#">Cusco Guide</a>
+                                        <h6>PETER BENNETT</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-card">
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="#">Cusco Guide</a>
+                                        <h6>PETER BENNETT</h6>
+                                    </div>
+                                  </div>
+        
+                            </div>             
+                            <div class="comment-card">
+                                     
+                                <div class="card mb-3">
+                                    <h5 class="card-title">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. </p>
+                                    <img src="assets/image/phan-the-anh.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <a href="#">Cusco Guide</a>
+                                        <h6>PETER BENNETT</h6>
+                                    </div>
+                                  </div>
+                            </div>
+                                    
+                        </div>
                     </div>
-                            
-                </div>
-                      
-
-
-
-                           
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </main>
         <footer>
